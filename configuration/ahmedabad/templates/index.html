@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ahmedabad  Prediction Model</title>
+    <style>
+      /* Set the background image for the page */
+      body {
+        background-image: url("https://images.unsplash.com/photo-1618340338709-027f57b98a16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      
+      /* Center the form in the middle of the page */
+      form {
+        display: table;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      
+      /* Style the input fields */
+      input[type="text"], input[type="email"], textarea {
+        padding: 10px;
+        margin: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: none;
+        background-color: #f2f2f2;
+      }
+      
+      /* Style the submit button */
+      input[type="submit"] {
+        padding: 10px 20px;
+        margin: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #4CAF50;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ahmedabad Prediction Model</h1>
+    <form method="POST">
+      {% csrf_token %}
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <label for="message">Message:</label>
+      <input type="email" id="email" name="email">
+      <label for="message">Message:</label>
+      <input type="email" id="email" name="email">
+      <label for="message">Message:</label>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
